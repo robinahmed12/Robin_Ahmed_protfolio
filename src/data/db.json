@@ -1,0 +1,159 @@
+{
+  "profile": {
+    "name": "Robin Ahmed",
+    "role": "Full Stack Developer",
+    "location": "Dhaka, Bangladesh",
+    "email": "shawonahmed0294@gmail.com",
+    "phone": "+880 01716900294",
+    "github": "https://github.com/robinahmed12",
+    "linkedin": "https://linkedin.com/in/robinahmed12",
+    "objective": "Full Stack Developer with hands-on experience building production and portfolio web applications using Angular, React.js, Next.js, TypeScript, Node.js, Express.js, Prisma, PostgreSQL, and SQL Server. Experienced in REST API integration, Zod validation, authentication and authorization, responsive UI development, and end-to-end full-stack workflows. Focused on clean, maintainable, scalable applications and effective collaboration across development and QA teams."
+  },
+  "experience": [
+    {
+      "company": "Efficient Software Solution",
+      "title": "Software Developer",
+      "period": "Aug 2025 — Present",
+      "points": [
+        "Build and maintain production-level Angular features using reusable components, services, and modules while following team coding standards.",
+        "Integrate REST APIs and handle data flow between frontend and backend.",
+        "Contribute to backend development using .NET Core and Entity Framework Core (EF Core), including API development, business logic implementation, and database operations.",
+        "Collaborate with senior developers, QA, and team members using Git.",
+        "Gain experience with real-world software development lifecycle (SDLC)."
+      ]
+    }
+  ],
+  "skills": {
+    "Frontend": ["HTML5", "CSS3", "JavaScript", "TypeScript", "Angular", "React.js", "Next.js", "Tailwind CSS", "Responsive Design"],
+    "Backend": ["Node.js", "Express.js", "REST APIs", "JWT Authentication", "Role-Based Access Control (RBAC)"],
+    "Validation / State": ["Zod", "React Hook Form", "TanStack Form", "TanStack Query"],
+    "ORM / Database": ["Prisma ORM", "PostgreSQL", "SQL Server"],
+    "Tools": ["Git", "GitHub", "VS Code", "Chrome DevTools", "Figma"],
+    "Project Exposure": ["MongoDB", "Firebase Auth", "Stripe", "Redis", "Recharts", "GSAP", "shadcn/ui"]
+  },
+  "projects": [
+    {
+      "slug": "gearup",
+      "name": "GearUp",
+      "image": "/projects/gearup.png",
+      "tagline": "Sports & Outdoor Equipment Rental Platform",
+      "description": "A full-stack Next.js rental platform where customers can browse and rent sports/outdoor equipment, providers manage gear and rental orders, and administrators oversee users, inventory, and rental activity.",
+      "tech": ["Next.js 16", "TypeScript", "Tailwind CSS", "shadcn/ui", "TanStack Query", "React Hook Form", "Zod", "Stripe.js", "JWT", "Git/GitHub"],
+      "features": [
+        "Role-based authentication with Customer, Provider, and Admin access control using JWT and HTTP-only authentication cookies.",
+        "Equipment browsing, keyword search, category/price filtering, sorting, rental date and quantity selection, and rental order tracking.",
+        "Provider and Admin dashboards for inventory management, rental lifecycle management, user moderation, and Stripe payment processing."
+      ],
+      "links": {
+        "live": "https://gearup.example.com",
+        "client": "https://github.com/robin-ahmed/gearup-client",
+        "server": "https://github.com/robin-ahmed/gearup-server"
+      }
+    },
+    {
+      "slug": "deliverix",
+      "name": "Deliverix",
+      "image": "/projects/deleverix-2.png",
+      "tagline": "Delivery Management System",
+      "description": "Full-stack operations platform for orders, dispatch, drivers, delivery tracking, proof of delivery, reporting, notifications, and audit activity.",
+      "tech": ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "React Hook Form", "Zod", "TanStack Query", "Node.js", "Express.js", "Prisma", "PostgreSQL", "JWT", "Stripe"],
+      "features": [
+        "Secure user authentication with email/password and Google (JWT-based).",
+        "Report, browse, and manage lost or found items with image uploads.",
+        "Search and filter items by category, location, and posting date."
+      ],
+      "links": {
+        "live": "https://deliverix.example.com",
+        "client": "https://github.com/robin-ahmed/deliverix-client",
+        "server": "https://github.com/robin-ahmed/deliverix-server"
+      }
+    },
+    {
+      "slug": "assessflow",
+      "name": "AssessFlow",
+      "image": "/projects/Screenshot 2026-09-19 152452.png",
+      "tagline": "Online Assessment & Recruitment Platform",
+      "description": "Role-based recruitment assessment platform for assessment creation, candidate attempts, evaluation, reporting, and payment-based credit management.",
+      "tech": ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "TanStack Query", "TanStack Form", "Zod", "Node.js", "Express.js", "Prisma", "PostgreSQL", "Redis", "JWT"],
+      "features": [
+        "Developed candidate assessment flows with MCQ, written, and coding questions, autosave and resume support, final submission, and result viewing.",
+        "Built recruiter workflows for company management, problem creation, assessment setup, candidate invitations, submission review, manual evaluation, reports, billing, and payments.",
+        "Skill, budget, and deadline-based filtering for task and freelancer discovery."
+      ],
+      "links": {
+        "live": "https://assessflow.example.com",
+        "client": "https://github.com/robin-ahmed/assessflow-client",
+        "server": "https://github.com/robin-ahmed/assessflow-server"
+      }
+    },
+    {
+      "slug": "campcare",
+      "name": "CampCare",
+      "image": "/projects/campcare.png",
+      "tagline": "Medical Camp Management System",
+      "description": "A full-stack MERN app for organizing and participating in medical camps. Features secure dashboards, Stripe payment integration, feedback, and real-time analytics.",
+      "tech": ["React.js", "Tailwind CSS", "GSAP", "Express.js", "MongoDB", "JWT", "Firebase Auth"],
+      "features": [
+        "Dynamic dashboards with Recharts-based analytics, search, sort, pagination.",
+        "Secure role-based access (JWT), protected routes.",
+        "Camp registration, feedback, and payment tracking with Stripe."
+      ],
+      "links": {
+        "live": "https://campcare.example.com",
+        "client": "https://github.com/robin-ahmed/campcare-client",
+        "server": "https://github.com/robin-ahmed/campcare-server"
+      }
+    },
+    {
+      "slug": "lostralink",
+      "name": "LostraLink",
+      "image": "/projects/lostralink.png",
+      "tagline": "Lost & Found Web Platform",
+      "description": "A full-stack MERN app for reporting, searching, and recovering lost items, enabling real-time communication between finders and seekers through a user-friendly platform.",
+      "tech": ["React.js", "Tailwind CSS", "Express.js", "MongoDB", "JWT", "Firebase Auth"],
+      "features": [
+        "Secure user authentication with email/password and Google (JWT-based).",
+        "Report, browse, and manage lost or found items with image uploads.",
+        "Search and filter items by category, location, and posting date."
+      ],
+      "links": {
+        "live": "https://lostralink.example.com",
+        "client": "https://github.com/robin-ahmed/lostralink-client",
+        "server": "https://github.com/robin-ahmed/lostralink-server"
+      }
+    },
+    {
+      "slug": "freelanzia",
+      "name": "Freelanzia",
+      "image": "/projects/freelanzia.png",
+      "tagline": "Freelance Tasks Platform",
+      "description": "A full-stack MERN app connecting freelancers and clients for task posting, bidding, and hiring, with real-time updates and skill-based matching.",
+      "tech": ["React.js", "Tailwind CSS", "Express.js", "MongoDB", "JWT", "Firebase Auth"],
+      "features": [
+        "Secure user authentication with email/password and Google (JWT-based).",
+        "Post tasks, place bids, and manage task status with real-time updates.",
+        "Skill, budget, and deadline-based filtering for task and freelancer discovery."
+      ],
+      "links": {
+        "live": "https://freelanzia.example.com",
+        "client": "https://github.com/robin-ahmed/freelanzia-client",
+        "server": "https://github.com/robin-ahmed/freelanzia-server"
+      }
+    }
+  ],
+  "professionalStrengths": [
+    "Adapting to changing requirements",
+    "Learning new frameworks quickly",
+    "Clean maintainable code",
+    "Team collaboration"
+  ],
+  "softSkills": [
+    "Adjusting to changing project requirement",
+    "Learning new framework/library quickly",
+    "Writing clean maintainable code"
+  ],
+  "languages": [
+    { "name": "Bengali", "level": "Native" },
+    { "name": "English", "level": "Professional Proficiency" }
+  ]
+}
