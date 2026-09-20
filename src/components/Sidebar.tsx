@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ChevronDown, Download, Globe, Mail, MapPin, Phone } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
 import IconLink from "@/components/IconLink";
+import ContactActions from "@/components/ContactActions";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -18,7 +19,6 @@ type Profile = {
   phone: string;
   github: string;
   linkedin: string;
-  portfolio: string;
   image?: string; 
 };
 
@@ -91,14 +91,14 @@ export default function Sidebar({ profile }: { profile: Profile }) {
       {!open && (
         <ul className="mt-4 space-y-4">
           <ContactRow icon={Mail} label="Email">
-            <a href={`mailto:${profile.email}`} className={hover}>
+            <ContactActions type="email" value={profile.email} triggerClassName={hover}>
               {profile.email}
-            </a>
+            </ContactActions>
           </ContactRow>
           <ContactRow icon={Phone} label="Phone">
-            <a href={`tel:${profile.phone.replace(/\s/g, "")}`} className={hover}>
+            <ContactActions type="phone" value={profile.phone} triggerClassName={hover}>
               {profile.phone}
-            </a>
+            </ContactActions>
           </ContactRow>
           <ContactRow icon={MapPin} label="Location">
             {profile.location}

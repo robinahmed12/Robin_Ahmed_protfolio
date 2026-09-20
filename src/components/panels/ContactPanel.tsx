@@ -1,5 +1,6 @@
-import { Mail, MapPin, Phone, Send } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Mail, MapPin, Phone } from "lucide-react";
+import ContactActions from "@/components/ContactActions";
+import ContactFormDialog from "@/components/ContactFormDialog";
 import PanelTitle from "./PanelTitle";
 
 type Profile = { email: string; phone: string; location: string };
@@ -10,28 +11,19 @@ function Tile({
   icon: Icon,
   label,
   children,
-  href,
 }: {
   icon: React.ComponentType<{ className?: string }>;
   label: string;
   children: React.ReactNode;
-  href?: string;
 }) {
-  const body = (
-    <>
+  return (
+    <div className={tile}>
       <div className="mb-2 flex items-center gap-2 text-muted-foreground">
         <Icon className="size-4 text-brand" />
         <p className="text-[12px]">{label}</p>
       </div>
-      <p className="text-[13px] font-medium break-all">{children}</p>
-    </>
-  );
-  return href ? (
-    <a href={href} className={`${tile} block transition-colors hover:bg-muted`}>
-      {body}
-    </a>
-  ) : (
-    <div className={tile}>{body}</div>
+      <div className="text-[13px] font-medium break-all">{children}</div>
+    </div>
   );
 }
 
@@ -45,26 +37,30 @@ export default function ContactPanel({ profile }: { profile: Profile }) {
       </p>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-3">
-        <Tile icon={Mail} label="Email" href={`mailto:${profile.email}`}>
-          {profile.email}
+        <Tile icon={Mail} label="Email">
+          <ContactActions
+            type="email"
+            value={profile.email}
+            triggerClassName="transition-colors hover:text-brand"
+          >
+            {profile.email}
+          </ContactActions>
         </Tile>
-        <Tile icon={Phone} label="Phone" href={`tel:${profile.phone.replace(/\s/g, "")}`}>
-          {profile.phone}
+        <Tile icon={Phone} label="Phone">
+          <ContactActions
+            type="phone"
+            value={profile.phone}
+            triggerClassName="transition-colors hover:text-brand"
+          >
+            {profile.phone}
+          </ContactActions>
         </Tile>
         <Tile icon={MapPin} label="Location">
           {profile.location}
         </Tile>
       </div>
 
-      <Button
-        size="lg"
-        className="mt-8"
-        nativeButton={false}
-        render={<a href={`mailto:${profile.email}`} />}
-      >
-        <Send data-icon="inline-start" />
-        Send a message
-      </Button>
+      <ContactFormDialog recipientEmail={profile.email} />
     </div>
   );
 }
