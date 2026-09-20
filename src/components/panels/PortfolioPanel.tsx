@@ -43,6 +43,7 @@ const filters: { label: string; test: (p: Project) => boolean }[] = [
     test: (p) => p.tech.some((t) => t.startsWith("Next.js")),
   },
   { label: "React.js", test: (p) => p.tech.includes("React.js") },
+  { label: "Express.js", test: (p) => p.tech.includes("Express.js") },
   { label: "Prisma", test: (p) => p.tech.includes("Prisma") },
   { label: "PostgreSQL", test: (p) => p.tech.includes("PostgreSQL") },
   { label: "MongoDB", test: (p) => p.tech.includes("MongoDB") },
@@ -70,14 +71,14 @@ function ProjectBanner({
 }) {
   if (!project.image) {
     <div
-        className={cn(
-          "flex h-44 items-center justify-center text-3xl font-bold text-primary-foreground",
-          tileTones[index % tileTones.length],
-        )}
-        aria-hidden="true"
-      >
-        {project.name.slice(0, 2).toUpperCase()}
-      </div>
+      className={cn(
+        "flex h-44 items-center justify-center text-3xl font-bold text-primary-foreground",
+        tileTones[index % tileTones.length],
+      )}
+      aria-hidden="true"
+    >
+      {project.name.slice(0, 2).toUpperCase()}
+    </div>;
     return (
       <div
         className={cn(
@@ -146,18 +147,48 @@ function ProjectCard({
         </ul>
       </CardContent>
 
-      <CardFooter className="gap-2">
-        <Button variant="outline" onClick={() => onOpen(project)}>
+      <CardFooter className="flex flex-wrap gap-2">
+        <Button
+          variant="outline"
+          onClick={() => onOpen(project)}
+          className="flex-1 sm:flex-none"
+        >
           Details
         </Button>
+
         <Button
           nativeButton={false}
           render={
             <a href={project.links.live} target="_blank" rel="noreferrer" />
           }
+          className="flex-1 sm:flex-none"
         >
           Live site
           <ExternalLink data-icon="inline-end" />
+        </Button>
+
+        <Button
+          variant="outline"
+          nativeButton={false}
+          render={
+            <a href={project.links.client} target="_blank" rel="noreferrer" />
+          }
+          className="flex-1 sm:flex-none"
+        >
+          <GitBranch data-icon="inline-start" />
+          Client code
+        </Button>
+
+        <Button
+          variant="outline"
+          nativeButton={false}
+          render={
+            <a href={project.links.server} target="_blank" rel="noreferrer" />
+          }
+          className="flex-1 sm:flex-none"
+        >
+          <Server data-icon="inline-start" />
+          Server code
         </Button>
       </CardFooter>
     </Card>
@@ -279,36 +310,6 @@ export default function PortfolioPanel({ projects }: { projects: Project[] }) {
                 >
                   Live site
                   <ExternalLink data-icon="inline-end" />
-                </Button>
-                <Button
-                  variant="outline"
-                  className="w-full sm:w-auto"
-                  nativeButton={false}
-                  render={
-                    <a
-                      href={selected.links.client}
-                      target="_blank"
-                      rel="noreferrer"
-                    />
-                  }
-                >
-                  <GitBranch data-icon="inline-start" />
-                  Client code
-                </Button>
-                <Button
-                  variant="outline"
-                  className="w-full sm:w-auto"
-                  nativeButton={false}
-                  render={
-                    <a
-                      href={selected.links.server}
-                      target="_blank"
-                      rel="noreferrer"
-                    />
-                  }
-                >
-                  <Server data-icon="inline-start" />
-                  Server code
                 </Button>
               </DialogFooter>
             </>

@@ -38,16 +38,16 @@
       "image": "/projects/gearup.png",
       "tagline": "Sports & Outdoor Equipment Rental Platform",
       "description": "A full-stack Next.js rental platform where customers can browse and rent sports/outdoor equipment, providers manage gear and rental orders, and administrators oversee users, inventory, and rental activity.",
-      "tech": ["Next.js 16", "TypeScript", "Tailwind CSS", "shadcn/ui", "TanStack Query", "React Hook Form", "Zod", "Stripe.js", "JWT", "Git/GitHub"],
+      "tech": ["Next.js 16", "Express.js", "Prisma", "PostgreSQL", "TypeScript", "Tailwind CSS", "shadcn/ui", "TanStack Query", "React Hook Form", "Zod", "Stripe.js", "JWT", "Git/GitHub"],
       "features": [
         "Role-based authentication with Customer, Provider, and Admin access control using JWT and HTTP-only authentication cookies.",
         "Equipment browsing, keyword search, category/price filtering, sorting, rental date and quantity selection, and rental order tracking.",
         "Provider and Admin dashboards for inventory management, rental lifecycle management, user moderation, and Stripe payment processing."
       ],
       "links": {
-        "live": "https://gearup.example.com",
-        "client": "https://github.com/robin-ahmed/gearup-client",
-        "server": "https://github.com/robin-ahmed/gearup-server"
+        "live": "https://gearup-frontend-three.vercel.app/",
+        "client": "https://github.com/robinahmed12/gear-up-frontend",
+        "server": "https://github.com/robinahmed12/gear-up"
       }
     },
     {
@@ -63,9 +63,9 @@
         "Search and filter items by category, location, and posting date."
       ],
       "links": {
-        "live": "https://deliverix.example.com",
-        "client": "https://github.com/robin-ahmed/deliverix-client",
-        "server": "https://github.com/robin-ahmed/deliverix-server"
+        "live": "https://deliverix-web-client.vercel.app/",
+        "client": "https://github.com/robinahmed12/deliverix-web-client",
+        "server": "https://github.com/robinahmed12/deliverix-beckend"
       }
     },
     {
@@ -81,9 +81,9 @@
         "Skill, budget, and deadline-based filtering for task and freelancer discovery."
       ],
       "links": {
-        "live": "https://assessflow.example.com",
-        "client": "https://github.com/robin-ahmed/assessflow-client",
-        "server": "https://github.com/robin-ahmed/assessflow-server"
+        "live": "https://assess-flow-frontend.vercel.app/",
+        "client": "https://github.com/robinahmed12/Assess-flow-frontend",
+        "server": "https://github.com/robinahmed12/Assess-flow-beckend"
       }
     },
     {
@@ -99,9 +99,9 @@
         "Camp registration, feedback, and payment tracking with Stripe."
       ],
       "links": {
-        "live": "https://campcare.example.com",
-        "client": "https://github.com/robin-ahmed/campcare-client",
-        "server": "https://github.com/robin-ahmed/campcare-server"
+        "live": "https://campcare-auth.web.app/",
+        "client": "https://github.com/robinahmed12/campcare-clinet",
+        "server": "https://github.com/robinahmed12/campcare-server"
       }
     },
     {
@@ -117,9 +117,9 @@
         "Search and filter items by category, location, and posting date."
       ],
       "links": {
-        "live": "https://lostralink.example.com",
-        "client": "https://github.com/robin-ahmed/lostralink-client",
-        "server": "https://github.com/robin-ahmed/lostralink-server"
+        "live": "https://lostralink-auth.web.app/",
+        "client": "https://github.com/robinahmed12/lostralink-client-side",
+        "server": "https://github.com/robinahmed12/lostralink-server-side"
       }
     },
     {
@@ -135,9 +135,9 @@
         "Skill, budget, and deadline-based filtering for task and freelancer discovery."
       ],
       "links": {
-        "live": "https://freelanzia.example.com",
-        "client": "https://github.com/robin-ahmed/freelanzia-client",
-        "server": "https://github.com/robin-ahmed/freelanzia-server"
+        "live": "https://freelanzia-auth.web.app/",
+        "client": "https://github.com/robinahmed12/freelanzia-client-side",
+        "server": "https://github.com/robinahmed12/freelanzia-server-side"
       }
     }
   ],
