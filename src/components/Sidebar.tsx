@@ -125,7 +125,7 @@ export default function Sidebar({ profile }: { profile: Profile }) {
         className="mt-5 w-full"
         nativeButton={false}
         render={
-          <a href="/docs/Resume_of_Robin_Ahmed.pdf" download="Robin_Ahmed_Resume.pdf" />
+          <a href="/docs/Resume_of_Robin_Ahmed_.pdf" download="Robin_Ahmed_Resume.pdf" />
         }
       >
         <Download data-icon="inline-start" />
