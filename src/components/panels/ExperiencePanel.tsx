@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import PanelTitle from "./PanelTitle";
 
 type ExperienceItem = {
@@ -10,13 +9,11 @@ type ExperienceItem = {
 
 type Language = { name: string; level: string };
 
-export default function ResumePanel({
+export default function ExperiencePanel({
   experience,
-  skills,
   languages,
 }: {
   experience: ExperienceItem[];
-  skills: Record<string, string[]>;
   languages: Language[];
 }) {
   return (
@@ -48,24 +45,6 @@ export default function ResumePanel({
           </li>
         ))}
       </ol>
-
-      <div className="mt-12">
-        <PanelTitle>My skills</PanelTitle>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {Object.entries(skills).map(([category, list]) => (
-            <div key={category} className="rounded-3xl bg-muted/60 p-5 dark:bg-muted/40">
-              <p className="text-[13px] font-semibold">{category}</p>
-              <div className="mt-3 flex flex-wrap gap-1.5">
-                {list.map((skill) => (
-                  <Badge key={skill} variant="outline" className="h-auto whitespace-normal py-0.5">
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
 
       <div className="mt-12">
         <PanelTitle>Languages</PanelTitle>

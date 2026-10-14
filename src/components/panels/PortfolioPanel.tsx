@@ -298,6 +298,37 @@ export default function PortfolioPanel({ projects }: { projects: Project[] }) {
 
               <DialogFooter>
                 <Button
+                  variant="outline"
+                  nativeButton={false}
+                  render={
+                    <a
+                      href={selected.links.client}
+                      target="_blank"
+                      rel="noreferrer"
+                    />
+                  }
+                  className="flex-1 sm:flex-none"
+                >
+                  <GitBranch data-icon="inline-start" />
+                  Client code
+                </Button>
+
+                <Button
+                  variant="outline"
+                  nativeButton={false}
+                  render={
+                    <a
+                      href={selected.links.server}
+                      target="_blank"
+                      rel="noreferrer"
+                    />
+                  }
+                  className="flex-1 sm:flex-none"
+                >
+                  <Server data-icon="inline-start" />
+                  Server code
+                </Button>
+                <Button
                   className="w-full sm:w-auto"
                   nativeButton={false}
                   render={

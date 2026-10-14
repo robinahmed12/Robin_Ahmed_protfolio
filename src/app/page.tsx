@@ -5,11 +5,18 @@ import db from "@/data/db.json";
 import Sidebar from "@/components/Sidebar";
 import NavTabs, { TabId } from "@/components/NavTabs";
 import AboutPanel from "@/components/panels/AboutPanel";
-import ResumePanel from "@/components/panels/ResumePanel";
+import ExperiencePanel from "@/components/panels/ExperiencePanel";
+import SkillsPanel from "@/components/panels/SkillsPanel";
 import PortfolioPanel from "@/components/panels/PortfolioPanel";
 import ContactPanel from "@/components/panels/ContactPanel";
 
-const sectionIds: TabId[] = ["about", "resume", "portfolio", "contact"];
+const sectionIds: TabId[] = [
+  "about",
+  "experience",
+  "skills",
+  "portfolio",
+  "contact",
+];
 
 const sectionClass =
   "scroll-mt-24 rounded-4xl bg-card p-6 text-card-foreground shadow-md ring-1 ring-foreground/5 dark:ring-foreground/10 sm:p-8";
@@ -74,12 +81,15 @@ export default function Home() {
                 />
               </section>
 
-              <section id="resume" className={sectionClass}>
-                <ResumePanel
+              <section id="experience" className={sectionClass}>
+                <ExperiencePanel
                   experience={db.experience}
-                  skills={db.skills}
                   languages={db.languages}
                 />
+              </section>
+
+              <section id="skills" className={sectionClass}>
+                <SkillsPanel skills={db.skills} />
               </section>
 
               <section id="portfolio" className={sectionClass}>

@@ -2,11 +2,17 @@
 
 import { cn } from "@/lib/utils";
 
-export type TabId = "about" | "resume" | "portfolio" | "contact";
+export type TabId =
+  | "about"
+  | "experience"
+  | "skills"
+  | "portfolio"
+  | "contact";
 
 const tabs: { id: TabId; label: string }[] = [
   { id: "about", label: "About" },
-  { id: "resume", label: "Resume" },
+  { id: "experience", label: "Experience" },
+  { id: "skills", label: "Skills" },
   { id: "portfolio", label: "Portfolio" },
   { id: "contact", label: "Contact" },
 ];

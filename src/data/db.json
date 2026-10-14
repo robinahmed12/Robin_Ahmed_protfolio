@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Robin Ahmed",
-    "role": "Full Stack Developer",
+    "role": "Full Stack Developer | Next.js | Angular | Node Js | PostgreSQL",
     "location": "Dhaka, Bangladesh",
     "email": "robin.ahmed.dev@gmail.com",
     "phone": "+880 01716900294",
@@ -28,8 +28,9 @@
     "Backend": ["Node.js", "Express.js", "REST APIs", "JWT Authentication", "Role-Based Access Control (RBAC)"],
     "Validation / State": ["Zod", "React Hook Form", "TanStack Form", "TanStack Query"],
     "ORM / Database": ["Prisma ORM", "PostgreSQL", "SQL Server"],
+    "Caching / Background Jobs": ["Redis", "Node Cron", "BullMQ"],
     "Tools": ["Git", "GitHub", "VS Code", "Chrome DevTools", "Figma"],
-    "Project Exposure": ["MongoDB", "Firebase Auth", "Stripe", "Redis", "Recharts", "GSAP", "shadcn/ui"]
+    "Project Exposure": ["MongoDB", "Firebase Auth", "Stripe", "Recharts", "GSAP", "shadcn/ui"]
   },
   "projects": [
     {
