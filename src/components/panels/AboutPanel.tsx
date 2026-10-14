@@ -69,7 +69,7 @@ export default function AboutPanel({
       <TextCards items={strengths} />
 
       {/* <h3 className="mt-8 mb-4 text-[15px] font-semibold">Soft Skills</h3> */}
-      <TextCards items={softSkills} />
+      {/* <TextCards items={softSkills} /> */}
     </div>
   );
 }
